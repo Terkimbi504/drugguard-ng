@@ -285,7 +285,7 @@ npm run dev
 - View model performance metrics
 
 ### 4. Review API Documentation
-- Visit http://localhost:8000/docs
+- Visit http://drugguard-ng 
 - Interactive Swagger UI for all endpoints
 - Try API calls directly
 
