@@ -231,8 +231,8 @@ scripts\run_project.bat
 ```
 
 This opens two terminal windows:
-- **Backend**: http://localhost:8000
-- **Frontend**: http://localhost:5173
+- **Backend**: http://drugguard-ng.vercel.app
+- **Frontend**: http://drugguard-ng vercel.app1
 
 ---
 
@@ -347,17 +347,14 @@ FRONTEND_URL=https://your-frontend-domain.com
 BACKEND_URL=https://your-backend-domain.com
 ENVIRONMENT=production
 DEBUG=false
-```
-
----
 
 ## Project Structure Details
 
 ### Backend Services
-- **VerificationService**: Product search and indicator checking
-- **RiskService**: Risk score calculation
-- **ExplanationService**: Human-readable explanations
-- **MLService**: Machine learning predictions
+- **Verification Service**: Product search and indicator checking
+- **Risk Service**: Risk score calculation
+- **Explanation Service**: Human-readable explanations
+- **ML Service**: Machine learning predictions
 
 ### Frontend Components
 - **Header**: Navigation and branding
@@ -405,47 +402,6 @@ DEBUG=false
 - ✅ Healthcare tech concepts
 - ❌ Production drug verification
 - ❌ Official regulatory compliance
-
----
-
-## Troubleshooting
-
-### Backend won't start
-```bash
-# Check Python version
-python --version
-
-# Make sure virtual environment is activated
-.venv\Scripts\activate.bat
-
-# Install missing dependencies
-pip install -r backend\requirements.txt
-```
-
-### Frontend won't start
-```bash
-# Clear node_modules and reinstall
-cd frontend
-rmdir node_modules /s /q
-npm install
-npm run dev
-```
-
-### Connection errors
-- Verify backend is running on http://localhost:8000
-- Verify frontend is running on http://localhost:5173
-- Check firewall settings
-
-### Database issues
-```bash
-# Delete old database and regenerate
-del backend\app\drugguard.db
-cd backend
-python seed_data.py
-```
-
----
-
 ## License & Attribution
 
 This is an educational prototype developed as a demonstration project. It uses fictional data and is not affiliated with any official regulatory body.
